@@ -1,21 +1,5 @@
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-
-<?php
- session_start();
-	$host = "mysql.hostinger.com.br";
-	$user = "u208675905_sarah";
-	$senha = "chatdb";
-	$db = "u208675905_chat";
-	
-	mysql_connect($host, $user, $senha);	//conectar ao banco de dados
-	mysql_select_db($db);			//escolher o esquema (base de dados)
-	mysql_query("SET NAMES 'utf8'");	
-	mysql_query('SET character_set_connection=utf8');
-	mysql_query('SET character_set_client=utf8');
-	mysql_query('SET character_set_results=utf8');
-?>
-
 <head>
   <title>Gráfica IFRN</title>
   <meta charset="utf-8">
