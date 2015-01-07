@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gráfica IFRN</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <div class="container">
+    	<h1><a href="index.html">Gráfica IFRN</a></h1>
+      <nav>
+        <ul>
+		  <li><a href="entrada.html">Início</a></li>
+          <li><a href="realizar.html" class="current">Realizar</a></li>
+          <li><a href="verificar.html">Verificar</a></li>
+          <li><a href="cadastrar.html">Cadastros</a></li>
+          <li><a href="estoque.html">Estoque</a></li>
+          <li><a href="sair.html">Sair</a></li>
+        </ul>
+      </nav>
+    </div>
+	</header>
+ 
+  <div class="main-box">
+    <div class="container">
+      <div class="inside">
+        <div class="wrapper">
+        	<!-- aside -->
+          <aside>
+            <h2></span></h2>
+            <div class="img-box">
+            	<figure><img src="images/print.jpg" alt=""></figure>
+              Selecione um arquivo do seu computador que você deseja que seja enviado para impressão.
+            </div>
+            
+          </aside>
+          <!-- content -->
+          <section id="content">
+            <article>
+            	<h2>Realizar <span>Novo</span> Pedido</h2>
+
+				<form action="upload.php" method="post" enctype="multipart/form-data"><br/>
+        Título: <br/>
+        <input type="text" name="titulo" size="35"/><br/><br/>
+				Carregar arquivo<br/>
+				<input type="file" name="arquivo" size="20"/> <br/><br/>
+				Especificações: <br/>
+				<input type="checkbox" name="arquivo" size="20"/>Restrito<br/>
+				<input type="checkbox" name="arquivo" size="20"/>Impressão em menos de 24h<br/>
+				<input type="checkbox" name="arquivo" size="20"/>Impressão frente e verso<br/>
+				<input type="checkbox" name="arquivo" size="20"/>Impressão encadernada<br/><br/>
+        Observação: <br/>
+        <input type="text" name="obs" size="35"/><br/><br/>
+				<input type="submit" value="Enviar"/>
+				</form>
+            </article> 
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer>
+    <div class="container">
+    	<div class="wrapper">
+        <div class="fleft">IFRN <i>Campus Santa Cruz</i></div>
+        <div class="fright">Gráfica IFRN, 2014. <span color="#f27f02">Edriana Medeiros e Sarah Santos.</span></a>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript"> Cufon.now(); </script>
+</body>
+</html>
