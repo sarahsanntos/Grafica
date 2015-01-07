@@ -10,9 +10,18 @@ include("config/conn.php");
 	$cpf = $_POST['cpf'];
 	$cargo = $_POST['cargo'];
 
-	$con = mysql_connect("mysql.hostinger.com.br", "u208675905_sarah", "chatdb") or die ("Sem conexão com o servidor");
-	$select = mysql_select_db("u208675905_chat") or die("ERROR"); 
-	INSERT INTO usuario(nome, matricula, cpf, cargo, senha) VALUES($nome, $matricula, $cpf, $cargo, $senha); 
+	$sql= "INSERT INTO usuario(nome, matricula, cpf, cargo, senha)";
+	$sql .= "VALUES('$nome', '$matricula', '$cpf', '$cargo', '$senha')"; 
+	
+	if($resultado= mysql_query($sql)){
+		header('listagem.php');
+	}
+	
+	else{
+		header('');
+	}
+	
+
 	
 
  ?>
