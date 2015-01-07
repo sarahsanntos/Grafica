@@ -1,6 +1,6 @@
 <?php 
 
- session_start();
+include("config/conn.php");
 
 	
  
@@ -12,7 +12,7 @@
 
 	$con = mysql_connect("mysql.hostinger.com.br", "u208675905_sarah", "chatdb") or die ("Sem conexão com o servidor");
 	$select = mysql_select_db("u208675905_chat") or die("ERROR"); 
-	INSERT INTO usuario(nome, matricula, cpf, cargo, senha) VALUES(nome, matricula, cpf, cargo, senha); 
+	INSERT INTO usuario(nome, matricula, cpf, cargo, senha) VALUES($nome, $matricula, $cpf, $cargo, $senha); 
 	
 
  ?>
