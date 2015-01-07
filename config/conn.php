@@ -7,7 +7,7 @@ $user_db="u208675905_sarah";
 $senha_db="chatdb";
 $hostname="mysql.hostinger.com.br";
 
-$conexao=mysql_connect($hostname,$user_db,$senha_db);mysql_select_db($banco_dados) or die("Erro na conexão com o banco de dados");
+$conexao=mysql_connect($hostname,$user_db,$senha_db); mysql_select_db($banco_dados) or die("Erro na conexão com o banco de dados");
 
  if(!$conexao)
      {
